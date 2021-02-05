@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  dtools:
+    image: bplein/bpxtools:latest
+    container_name: bpxtools
+    hostname: bpxtools
+    restart: always
+    network_mode: "host"
+    volumes:
+      - $HOME/Documents/GitHub/:/root/GitHub/
+      - $HOME/Downloads:/root/Downloads
+      - $HOME/.kube:/root/.kube
+      - $HOME/.kube:/root/.aws
+      - $HOME/.ssh:/root/.ssh
