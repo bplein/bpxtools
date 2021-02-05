@@ -13,3 +13,4 @@ services:
       - $HOME/.kube:/root/.kube
       - $HOME/.kube:/root/.aws
       - $HOME/.ssh:/root/.ssh
+      - $HOME/.px-deploy:/root/.px-deploy
