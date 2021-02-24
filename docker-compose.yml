@@ -8,7 +8,7 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - $HOME/Documents/GitHub/:/root/GitHub/
+      - $HOME/Documents/GitHub:/root/GitHub
       - $HOME/Downloads:/root/Downloads
       - $HOME/.kube:/root/.kube
       - $HOME/.kube:/root/.aws
