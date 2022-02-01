@@ -3,7 +3,7 @@ FROM ubuntu
 LABEL maintainer="plein@purestorage.com"
 
 # Version of K8s for kubectl install
-ENV KUBEVERSION=v1.20.0
+ENV KUBEVERSION=v1.21.0
 # Version of s5cmd
 ARG  S5CMDVERSION=1.0.0
 # Used by git to download the Gist I host of a file we need
