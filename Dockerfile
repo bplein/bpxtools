@@ -3,7 +3,7 @@ FROM ubuntu
 LABEL maintainer="plein@purestorage.com"
 
 # Version of K8s for kubectl install
-ENV KUBEVERSION=v1.21.0
+ENV KUBEVERSION=v1.22.6
 # Version of s5cmd
 ARG  S5CMDVERSION=1.0.0
 # Used by git to download the Gist I host of a file we need
@@ -26,11 +26,13 @@ RUN curl -LO https://dl.k8s.io/release/${KUBEVERSION}/bin/linux/amd64/kubectl \
 	&& echo 'complete -F __start_kubectl k' >>~/.bashrc \
 	&& rm -rf /tmp/*
 # Install s5cmd
-RUN curl -L https://github.com/peak/s5cmd/releases/download/v${S5CMDVERSION}/s5cmd_${S5CMDVERSION}_Linux-64bit.tar.gz | tar xzf - && \
-    mv s5cmd /usr/local/bin/
+RUN curl -L https://github.com/peak/s5cmd/releases/download/v${S5CMDVERSION}/s5cmd_${S5CMDVERSION}_Linux-64bit.tar.gz | tar xzf - \
+    && mv s5cmd /usr/local/bin/
 
 # Install util.sh "run" command that makes pretty output like you are typing. Useful for demos.
-RUN git clone https://gist.github.com/${RUNUTILGIST}.git && mv ${RUNUTILGIST}/util.sh /usr/local/bin/ && chmod +x /usr/local/bin/util.sh
+RUN git clone https://gist.github.com/${RUNUTILGIST}.git \
+    && mv ${RUNUTILGIST}/util.sh /usr/local/bin/ \
+	&& chmod +x /usr/local/bin/util.sh
 
 # takes longer to build, but more  secure if you upgrade....
 #RUN apt-get -y upgrade 
