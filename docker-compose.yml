@@ -11,6 +11,6 @@ services:
       - $HOME/source:/root/source
       - $HOME/Downloads:/root/Downloads
       - $HOME/.kube:/root/.kube
-      - $HOME/.kube:/root/.aws
+      - $HOME/.aws:/root/.aws
       - $HOME/.ssh:/root/.ssh
       - $HOME/.px-deploy:/root/.px-deploy
