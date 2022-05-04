@@ -9,6 +9,7 @@ services:
     network_mode: "host"
     volumes:
       - $HOME/source:/root/source
+      - $HOME/px-deployments:/root/px-deployments
       - $HOME/Downloads:/root/Downloads
       - $HOME/.kube:/root/.kube
       - $HOME/.aws:/root/.aws
