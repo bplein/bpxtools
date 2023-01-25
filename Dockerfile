@@ -1,11 +1,11 @@
-FROM ubuntu
+FROM ubuntu:22.04
 
 LABEL maintainer="plein@purestorage.com"
 
 # Version of K8s for kubectl install
-ENV KUBEVERSION=v1.22.6
+ENV KUBEVERSION=v1.24.0
 # Version of s5cmd
-ARG  S5CMDVERSION=1.0.0
+ARG  S5CMDVERSION=2.0.0
 # Used by git to download the Gist I host of a file we need
 ARG  RUNUTILGIST=841f3e5ce73da9a3bea7e7d31fdb7651
 # helps apt run better non-interactively
