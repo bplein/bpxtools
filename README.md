@@ -1,4 +1,5 @@
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bplein/bpxtools/build-image.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/bplein/bpxtools?style=plastic)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bplein/bpxtools/build-image.yml)](https://github.com/bplein/bpxtools/actions/workflows/build-image.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/bplein/bpxtools)](https://hub.docker.com/repository/docker/bplein/bpxtools/general)
 # bpxtools
 Small Linux container with tools for running demos.
 
