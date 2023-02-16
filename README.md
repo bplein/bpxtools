@@ -1,3 +1,4 @@
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bplein/bpxtools/build-image.yml)
 # bpxtools
 Small Linux container with tools for running demos.
 
