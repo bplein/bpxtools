@@ -1,3 +1,4 @@
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/bplein/bpxtools?sort=semver)](https://hub.docker.com/repository/docker/bplein/bpxtools/tags?page=1&ordering=last_updated)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bplein/bpxtools/build-image.yml)](https://github.com/bplein/bpxtools/actions/workflows/build-image.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/bplein/bpxtools)](https://hub.docker.com/repository/docker/bplein/bpxtools/general)
 # bpxtools
