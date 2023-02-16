@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-LABEL maintainer="plein@purestorage.com"
+LABEL org.opencontainers.image.authors="https://github.com/bplein"
 
 # Version of K8s for kubectl install
 ENV KUBEVERSION=v1.24.0
