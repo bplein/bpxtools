@@ -13,7 +13,7 @@ ARG  DEBIAN_FRONTEND=noninteractive
 ARG	 MYTIMEZONE=America/Chicago
 
 WORKDIR /tmp
-RUN apt-get update && apt install --no-install-recommends -y pv vim nano git bash-completion fio \
+RUN apt-get update && apt-get install --no-install-recommends -y pv vim nano git bash-completion fio \
 	unzip tzdata iperf3 iputils-ping less sysstat gettext\
 	&& apt install -y wget curl openssh-client binutils \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/* /var/log/*
